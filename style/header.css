@@ -1,0 +1,61 @@
+body{
+    margin:0;
+}
+
+.images li{
+    display: flex;
+}
+
+div.logo{
+    border-style: solid;
+    width: 10%;
+    text-align: center;
+    padding: 27px;
+    top: 45px;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%);
+}
+
+.mag{
+    max-width: 135px;
+    max-height: 135px;
+    width: auto;
+    height: auto;
+}
+
+.bag{
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50px;
+    right: 80px; 
+}
+
+.list li{
+    color: white;
+    font-size: 16pt;
+    display: inline-block;
+    border-style: none;
+    margin: 0px;
+    padding: 17.5px;
+}
+
+.list li:hover{
+    background-color: rgb(123, 0, 0);
+}
+
+ul.list{
+    position: sticky;
+    text-align: center;
+    background-color: black;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: auto;
+}
+
