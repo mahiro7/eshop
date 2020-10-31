@@ -2,8 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/header.css">
-    <title>header</title>
+    <title><?= isset($PageTitle)  ? $PageTitle : "eshop default" ?></title>
+    <!--HTML Tags-->
+    <?php if (function_exists('head')){
+        head();
+    } ?>
 </head>
 
 <body>
@@ -11,11 +14,11 @@
         <li><img src="../images/search-icon.png" alt="Magnifier icon" class="mag" usemap="#magmap"></li>
         <map name="magmap" id="magmap"><area shape="circle" coords="70,70,35" href=""></map>
         
-        <li><div class="logo">LOGO</div></li>
+        <li><a href="index.php"><div class="logo">LOGO</div></a></li>
 
         <div class="login">
-            <li class="login"><p><a href="">Login | Cadastre-se</a></p></li>
-            <li><a href=""><img src="../images/bag-icon.png" alt="Bag icon" class="bag"></a></li>
+            <li class="login"><p><a href="login.php">Login | Cadastre-se</a></p></li>
+            <li><a href="cart.php"><img src="../images/bag-icon.png" alt="Bag icon" class="bag"></a></li>
         </div>
     </ul>
     
@@ -29,5 +32,3 @@
         <a href=""><li>ACESSÓRIOS</li></a>
     </ul>
     
-</body>
-</html>
